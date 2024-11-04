@@ -1,0 +1,17 @@
+@use "variables" as vars;
+
+// Mixin para cor de fundo com gradiente
+@mixin bg-color($color) {
+  background-image: linear-gradient(
+    to bottom,
+    $color 50%,
+    vars.$clr-neutral-600
+  );
+}
+
+// Mixin para imagem de fundo
+@mixin bg-img($card, $top: -1rem) {
+  background-image: url("../../images/icon-#{$card}.svg");
+  background-position: right 1.6rem top #{$top};
+  background-repeat: no-repeat;
+}
