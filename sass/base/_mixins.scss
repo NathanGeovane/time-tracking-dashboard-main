@@ -11,7 +11,7 @@
 
 // Mixin para imagem de fundo
 @mixin bg-img($card, $top: -1rem) {
-  background-image: url("../../images/icon-#{$card}.svg");
+  background-image: url("./images/icon-#{$card}.svg");
   background-position: right 1.6rem top #{$top};
   background-repeat: no-repeat;
 }
